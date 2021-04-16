@@ -89,14 +89,14 @@ function animate() {
     controls.update();
 
     if (horseScene !== undefined) {
-        horseScene.traverse(function(child) {
-            if (child.isMesh) {
-                child.material.opacity = horseOpacity;
-                if (horseOpacity < 1) {
+        if (horseOpacity < 1) {
+            horseScene.traverse(function(child) {
+                if (child.isMesh) {
+                    child.material.opacity = horseOpacity;
                     horseOpacity += 0.002;
                 }
-            }
-        });
+            });
+        }
     }
 
     render();
