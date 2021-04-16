@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+#loader {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#loader span {
+    bottom: 12px;
+    position: relative;
+}
+
+#loader-spinner {
+    width: 30px;
+    margin-top: 10px;
+}
